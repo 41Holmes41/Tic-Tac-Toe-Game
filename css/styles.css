@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table, tr, td {
+    background-color: black;
+    border: black 300px;
+    
+}
+
+td {
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3,10vmin);
+    grid-gap: 1vmin;
+}
+
+
+
+section div {
+    border: 1px solid grey;
+}
+
+div:hover {
+    border: 10px solid purple;
+}
+
